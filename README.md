@@ -1,26 +1,33 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# 1973 - Progressive Web Apps
 
-## How to use this template
+### LINK PARA OS VÍDEOS
+Você pode assistir os vídeos deste curso sendo um assinante do site http://balta.io.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+http://player.balta.io/#/courses/1973
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+### Sumário
+Neste curso vamos criar uma aplicação Web progressiva, que conta com recursos modernos, interface rica entre diversas outras funcionalidade que vão elevar o nível da sua App.
 
-### With the Ionic CLI:
-
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
-
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+### Conteúdo Programático
+* Instalações e Ferramentas
+* Prototipando a tela de login
+* Prototipando a tela de cadastro
+* Prototipando a home
+* Prototipando a listagem de fotos
+* Prototipando o envio de imagem
+* Preparando o projeto no Firebase
+* Integrando Firebase ao projeto
+* Criando uma Conta
+* Autenticando o usuário
+* Mantendo usuário autenticado
+* Prototipando o perfil
+* Logout
+* Prototipando a página de tirar foto
+* Tirando foto
+* Obtendo a localização
+* Aplicando filtros
+* Enviando informações
+* Listando as imagens
+* Arquivo manifest
+* Exibindo o mapa
+* Push Notifications
