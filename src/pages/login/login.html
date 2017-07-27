@@ -1,0 +1,32 @@
+<ion-content padding class="auto-scroll">
+  <ion-grid fixed>
+    <ion-row align-items-center justify-content-center>
+      <ion-col col-12 col-sm-12 col-md-6>
+        <form [formGroup]="form">
+          <br><br><br>
+          <h1 text-center class="oleo-script logo-title">Baltagram</h1>
+          <br><br>
+          <ion-list no-lines>
+            <ion-item>
+              <ion-input type="email" placeholder="E-mail" maxlength="140" formControlName="email"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input type="password" placeholder="Senha" maxlength="20" formControlName="password"></ion-input>
+            </ion-item>
+          </ion-list>
+          <button ion-button block large outline (click)="submit()" [disabled]="!form.valid">Entrar</button>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar text-center>
+    <ion-buttons>
+      <button small ion-button block (click)="goToSignup()">
+        <small>Ainda não tem conta?&nbsp;<strong>Cadastre-se</strong></small>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

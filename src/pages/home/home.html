@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center class="oleo-script">Baltagram {{ user }}</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="showSendPhoto()">
+        <ion-icon name="camera"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auto-scroll">
+  <ion-tabs>
+    <ion-tab tabIcon="home" [root]="photosTab"></ion-tab>
+    <ion-tab tabIcon="search" disabled [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="add-circle" class="add-tab-icon" [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="heart" [root]="profileTab"></ion-tab>
+    <ion-tab tabIcon="contact" [root]="profileTab"></ion-tab>
+  </ion-tabs>
+</ion-content>

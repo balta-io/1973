@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center class="oleo-script">Baltagram</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <video id="video" width="100%" autoplay></video>
+    <canvas id="canvas" style="display:none;" width="320" height="240"></canvas>
+  </ion-card>
+  <div padding>
+    <button ion-button block large outline (click)="takePicture()">Tirar Foto</button>
+  </div>
+</ion-content>

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script|Fira+Sans:300');
+ion-content {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.auto-scroll .scroll-content {
+  overflow: auto;
+}
+
+.oleo-script {
+  font-family: 'Oleo Script', cursive;
+}
+
+.logo-title {
+  font-size: 3em;
+}
+
+.add-tab-icon>ion-icon {
+  font-size: 32px;
+}
+
+.fullscreen-image {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  overflow: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+page-login,
+page-signup {
+  ion-input {
+    background-color: #FAFAFA !important;
+    border: 1px solid #dbdbdb !important;
+    border-radius: 3px;
+    color: #999999 !important;
+    margin-bottom: 10px;
+  }
+  ion-input,
+  ion-button {
+    font-size: 0.8em !important;
+  }
+}

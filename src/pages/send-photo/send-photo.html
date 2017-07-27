@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title text-center class="oleo-script">Baltagram</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auto-scroll">
+  <ion-card>
+    <ion-slides (ionSlideDidChange)="changeFilter()">
+      <ion-slide *ngFor="let filter of filters" text-center>
+        <img src="{{ photo }}" alt="" class="{{ filter}}" style="width: 100%">
+        <small>{{ filter }}</small>
+      </ion-slide>
+    </ion-slides>
+    <ion-card-content>
+      <form [formGroup]="form">
+        <ion-list no-lines>
+          <ion-item>
+            <ion-input type="text" placeholder="Título" maxlength="40" formControlName="title"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-textarea placeholder="Mensagem" rows="3" maxlength="255" formControlName="message"></ion-textarea>
+          </ion-item>
+        </ion-list>
+      </form>
+    </ion-card-content>
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="danger" icon-start *ngIf="location == ''" (click)="getLocation()"><ion-icon name='pin'></ion-icon> Ativar Localização</button>
+        <button ion-button clear small color="danger" icon-start *ngIf="location != ''"><ion-icon name='pin'></ion-icon> {{ location }}</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  <div padding>
+    <button ion-button block large outline [disabled]="!form.valid" (click)="submit()">Enviar</button>
+  </div>
+
+</ion-content>
