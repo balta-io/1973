@@ -33,7 +33,7 @@ Neste curso vamos criar uma aplicação Web progressiva, que conta com recursos 
 * Listando as imagens
 * Exibindo o mapa
 * Arquivo manifest
-* Push
+* Notificações
 * Push Notification
 * Trabalhando Offline
 * Publicando a Aplicação
